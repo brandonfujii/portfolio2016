@@ -1,0 +1,118 @@
+extends layout
+
+block content
+  .container#slider
+      .carousel(data-target='carousel')
+        .articles
+          article.slide-1.active(data-slide='1')
+            .images
+              a(href='#')
+                img.mobile-crop(src='https://images.unsplash.com/photo-1427751840561-9852520f8ce8?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=066c3296c39c50ff74dd939aea66ab04', width='618', height='676', alt='')
+                img.not-mobile-crop(src='https://images.unsplash.com/photo-1427751840561-9852520f8ce8?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=066c3296c39c50ff74dd939aea66ab04', width='1200', height='676', alt='')
+                .img-overlay(data-delay='1000')
+            .info
+              .tag(data-delay='1200')
+                .tag-inner
+                  | WEB DEVELOPMENT
+              .content(data-delay='1400')
+                a(href='#', rel='nofollow')
+                  | This is a description. Blah, blah, blah. The mitochondria is the powerhouse of the cell.
+          article.slide-2(data-slide='2')
+            .images
+              a(href='#')
+                img.mobile-crop(src='https://images.unsplash.com/photo-1455894127589-22f75500213a?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=204615391e1417eb122cf35079f65bab', width='618', height='676', alt='')
+                img.not-mobile-crop(src='http://blog.hhcolorlab.com/wp-content/uploads/2014/02/cinemagraph-13.gif', width='1200', height='676', alt='')
+                .img-overlay(data-delay='1000')
+            .info
+              .tag(data-delay='1200')
+                .tag-inner
+                  | INTERACTION DESIGN
+              .content(data-delay='1400')
+                a(href='#', rel='nofollow')
+                  | This is a description. Blah, blah, blah. The mitochondria is the powerhouse of the cell.
+          article.slide-3(data-slide='3')
+            .images
+              a(href='#')
+                img.mobile-crop(src='https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=dbea27138e4493b0472801ba3fa261ed', width='618', height='676', alt='')
+                img.not-mobile-crop(src='https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=dbea27138e4493b0472801ba3fa261ed', width='1200', height='676', alt='')
+                .img-overlay(data-delay='1000')
+            .info
+              .tag(data-delay='1200')
+                .tag-inner
+                  | UX DESIGN
+              .content(data-delay='1400')
+                a(href='#', rel='nofollow')
+                  | This is a description. Blah, blah, blah. The mitochondria is the powerhouse of the cell.
+          article.slide-4(data-slide='4')
+            .images
+              a(href='#')
+                img.mobile-crop(src='https://images.unsplash.com/photo-1450644995374-1721affb8ecd?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=9bf5c834147af4df90940f0a73747f88', width='618', height='676', alt='')
+                img.not-mobile-crop(src='https://images.unsplash.com/photo-1450644995374-1721affb8ecd?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=9bf5c834147af4df90940f0a73747f88', width='1200', height='676', alt='')
+                .img-overlay.activated(data-delay='1000')
+            .info
+              .tag.activated(data-delay='1200')
+                .tag-inner
+                  | MOBILE DEVELOPMENT
+              .content.activated(data-delay='1400')
+                a(href='#', rel='nofollow')
+                  | This is a description. Blah, blah, blah. The mitochondria is the powerhouse of the cell.
+          article.slide-5(data-slide='5')
+            .images
+              a(href='#')
+                img.mobile-crop(src='https://images.unsplash.com/photo-1454165205744-3b78555e5572?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=ca8c08d17555247f7580691500bb5351', width='618', height='676', alt='')
+                img.not-mobile-crop(src='https://images.unsplash.com/photo-1454165205744-3b78555e5572?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=ca8c08d17555247f7580691500bb5351', width='1200', height='676', alt='')
+                .img-overlay(data-delay='1000')
+            .info
+              .tag(data-delay='1200')
+                .tag-inner
+                  | FRONTEND
+              .content(data-delay='1400')
+                a(href='#', rel='nofollow')
+                  | This is a description. Blah, blah, blah. The mitochondria is the powerhouse of the cell.
+        ul.indicators
+          li.active(data-nav='1')
+            span
+          li(data-nav='2')
+            span
+          li(data-nav='3')
+            span
+          li(data-nav='4')
+            span
+          li(data-nav='5')
+            span
+        .prev-left
+        .next-right
+  section#projects.container
+    ul.projs
+      li.proj.col-md-7.large
+       .info 
+         h3 Title
+         p This is a description of the project. Blah, blah, blah. The mitochondria is the powerhouse of the cell.
+         .actionables
+           .link-wrapper
+             a(href='#') See more
+       img(src='https://images.unsplash.com/photo-1427751840561-9852520f8ce8?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=066c3296c39c50ff74dd939aea66ab04')
+      li.proj.col-md-5.sm
+        .info 
+         h3 Title
+         p This is a description of the project. Blah, blah, blah. The mitochondria is the powerhouse of the cell.
+         .actionables
+           .link-wrapper
+             a(href='#') See more
+        img(src='https://images.unsplash.com/photo-1427751840561-9852520f8ce8?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=066c3296c39c50ff74dd939aea66ab04')
+      li.proj.col-md-6.med
+        .info 
+         h3 Title
+         p This is a description of the project. Blah, blah, blah. The mitochondria is the powerhouse of the cell.
+         .actionables
+           .link-wrapper
+             a(href='#') See more
+        img(src='https://images.unsplash.com/photo-1427751840561-9852520f8ce8?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=066c3296c39c50ff74dd939aea66ab04')
+      li.proj.col-md-6.med
+        .info 
+         h3 Title
+         p This is a description of the project. Blah, blah, blah. The mitochondria is the powerhouse of the cell.
+         .actionables
+           .link-wrapper
+             a(href='#') See more
+        img(src='https://images.unsplash.com/photo-1427751840561-9852520f8ce8?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=066c3296c39c50ff74dd939aea66ab04')

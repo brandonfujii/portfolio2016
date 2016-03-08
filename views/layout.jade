@@ -1,0 +1,26 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title #{title}
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='keywords', content='Brandon Fujii, Brandon, Fujii, designer, developer, software, engineer, user, interface, interaction, design, web, development, nodejs, frontend, javascript, python, Chicago, NYC, Los Angeles, San Francisco, SF, California')
+    meta(name='referrer', content='origin')
+    meta(name='description', content="Hi, I'm Brandon Fujii, a designer and developer from Los Angeles. I study Computer Science at Northwestern University and specialize in web development and interaction design")
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css', integrity='sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7', crossorigin='anonymous')
+    link(rel='stylesheet', href='css/main.css')
+
+  body
+    .wrapper
+      include partials/header
+      block content 
+
+    script(src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js")
+    script(src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js")
+    script(src='js/scroll.js')
+    script(src='js/slider.js')
+    script(src='js/nav.js')
+
+    
