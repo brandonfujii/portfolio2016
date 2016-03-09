@@ -3,6 +3,7 @@ var $prev = $('.prev-left');
 var $next = $('.next-right');
 var $indicator = $('.indicators li');
 var timer;
+var hammertime = new Hammer($slider);
 
 $prev.on('click', function() {
   goPrev();
@@ -63,6 +64,11 @@ $('body').keydown(function(e) {
     goNext();
   }
 });
+
+hammertime.on('swipeleft', function(e) {
+  goNext();
+});
+
 
 // $(document).ready(function() {
 //   var timer = setInterval(goNext, 10000);
