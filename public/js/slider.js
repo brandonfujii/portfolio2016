@@ -64,6 +64,6 @@ $('body').keydown(function(e) {
   }
 });
 
-$(document).ready(function() {
-  var timer = setInterval(goNext, 10000);
-});
+// $(document).ready(function() {
+//   var timer = setInterval(goNext, 10000);
+// });
